@@ -1,0 +1,606 @@
+\hypertarget{class_b_s_tree}{}\section{B\+S\+Tree$<$ Data\+Type, Key\+Type $>$ Class Template Reference}
+\label{class_b_s_tree}\index{B\+S\+Tree$<$ Data\+Type, Key\+Type $>$@{B\+S\+Tree$<$ Data\+Type, Key\+Type $>$}}
+
+
+{\ttfamily \#include $<$B\+S\+Tree.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}{B\+S\+Tree} ()
+\begin{DoxyCompactList}\small\item\em default \hyperlink{class_b_s_tree}{B\+S\+Tree} constructor \end{DoxyCompactList}\item 
+\hyperlink{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}{B\+S\+Tree} (const \hyperlink{class_b_s_tree}{B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&other)
+\begin{DoxyCompactList}\small\item\em copy \hyperlink{class_b_s_tree}{B\+S\+Tree} constructor \end{DoxyCompactList}\item 
+\hyperlink{class_b_s_tree}{B\+S\+Tree} \& \hyperlink{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}{operator=} (const \hyperlink{class_b_s_tree}{B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&other)
+\begin{DoxyCompactList}\small\item\em overloaded assignment operator \end{DoxyCompactList}\item 
+\hyperlink{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}{$\sim$\+B\+S\+Tree} ()
+\begin{DoxyCompactList}\small\item\em default \hyperlink{class_b_s_tree}{B\+S\+Tree} destructor \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{insert} (const Data\+Type \&new\+Data\+Item)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{insert()} function that calls \hyperlink{class_b_s_tree_a8db9e377d980f427645c02234f06b550}{insert\+\_\+\+Helper()} \end{DoxyCompactList}\item 
+bool \hyperlink{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{retrieve} (const Key\+Type \&search\+Key, Data\+Type \&search\+Data\+Item) const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{retrieve()} function that calls \hyperlink{class_b_s_tree_a331b572e91929d110ea21ec46bc4bcd0}{retrieve\+\_\+\+Helper()} \end{DoxyCompactList}\item 
+bool \hyperlink{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{remove} (const Key\+Type \&delete\+Key)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{remove()} function that calls \hyperlink{class_b_s_tree_ab70fca446ea4c79b1b73a82b96b98d4f}{remove\+\_\+\+Helper()} \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{write\+Keys} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{write\+Keys()} function that calls \hyperlink{class_b_s_tree_a41d50aacd563ee862fae2ad9cc9072f2}{write\+Keys\+\_\+\+Helper()} \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{clear} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{clear()} function that calls \hyperlink{class_b_s_tree_a495825dc4b57ad4a2d1afa5836c04fe3}{clear\+\_\+\+Helper()} \end{DoxyCompactList}\item 
+bool \hyperlink{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{is\+Empty} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{is\+Empty()} function that checks if root is equal to N\+U\+LL \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}{show\+Structure} () const 
+\item 
+int \hyperlink{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{get\+Height} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{get\+Height()} function that calls \hyperlink{class_b_s_tree_acf3a9c10926e83c62d02a415f01911c0}{get\+Height\+\_\+\+Helper()} \end{DoxyCompactList}\item 
+int \hyperlink{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{get\+Count} () const 
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{get\+Count()} function that calls \hyperlink{class_b_s_tree_ac27b5f03e47d553c28e26e37b61e6cc0}{get\+Count\+\_\+\+Helper()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}{show\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$p, int level) const 
+\item 
+void \hyperlink{class_b_s_tree_a58f01e37aba1a3589d6a0527e8fd3b2b}{copy\+Constructor\+\_\+\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&end, \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$start)
+\begin{DoxyCompactList}\small\item\em Copy constructor helper that sets current \hyperlink{class_b_s_tree}{B\+S\+Tree} equal to another. \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_a8db9e377d980f427645c02234f06b550}{insert\+\_\+\+Helper} (const Data\+Type \&new\+Data\+Item, \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&ptr)
+\begin{DoxyCompactList}\small\item\em Inserts a new node containing new\+Data\+Item. If it exists, then it updates the data item with new\+Data\+Item. \end{DoxyCompactList}\item 
+bool \hyperlink{class_b_s_tree_a331b572e91929d110ea21ec46bc4bcd0}{retrieve\+\_\+\+Helper} (const Key\+Type \&search\+Key, Data\+Type \&search\+Data\+Item, \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$ptr) const 
+\begin{DoxyCompactList}\small\item\em Searches \hyperlink{class_b_s_tree}{B\+S\+Tree} for data item with the same key as search\+Key; if found, replaces data item with search\+Data\+Item and returns true. \end{DoxyCompactList}\item 
+bool \hyperlink{class_b_s_tree_ab70fca446ea4c79b1b73a82b96b98d4f}{remove\+\_\+\+Helper} (const Key\+Type \&delete\+Key, \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&ptr)
+\begin{DoxyCompactList}\small\item\em Delete data item with key delete\+Key from the \hyperlink{class_b_s_tree}{B\+S\+Tree}. If data is found, returns true. Else, it returns false. \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_a41d50aacd563ee862fae2ad9cc9072f2}{write\+Keys\+\_\+\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$ptr) const 
+\begin{DoxyCompactList}\small\item\em Outputs the keys of the data items in the \hyperlink{class_b_s_tree}{B\+S\+Tree}. They are output in ascending order. \end{DoxyCompactList}\item 
+void \hyperlink{class_b_s_tree_a495825dc4b57ad4a2d1afa5836c04fe3}{clear\+\_\+\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$\&ptr)
+\begin{DoxyCompactList}\small\item\em Removes all data from \hyperlink{class_b_s_tree}{B\+S\+Tree}. \end{DoxyCompactList}\item 
+int \hyperlink{class_b_s_tree_acf3a9c10926e83c62d02a415f01911c0}{get\+Height\+\_\+\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$ptr, int current\+Height) const 
+\begin{DoxyCompactList}\small\item\em Counts the number of data items in the \hyperlink{class_b_s_tree}{B\+S\+Tree} and returns its value. \end{DoxyCompactList}\item 
+int \hyperlink{class_b_s_tree_ac27b5f03e47d553c28e26e37b61e6cc0}{get\+Count\+\_\+\+Helper} (\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$ptr) const 
+\begin{DoxyCompactList}\small\item\em Counts the height of the \hyperlink{class_b_s_tree}{B\+S\+Tree} while recursively traversing itself. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} $\ast$ \hyperlink{class_b_s_tree_a83534afce9094181ac031f9f596a8625}{root}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{B\+S\+Tree()}{BSTree()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::{\bf B\+S\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}{}\label{class_b_s_tree_a4513fc6697f5e51bff8e7c448b446c9e}
+
+
+default \hyperlink{class_b_s_tree}{B\+S\+Tree} constructor 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+creates a \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\index{B\+S\+Tree@{B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{B\+S\+Tree(const B\+S\+Tree$<$ Data\+Type, Key\+Type $>$ \&other)}{BSTree(const BSTree< DataType, KeyType > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::{\bf B\+S\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}{}\label{class_b_s_tree_a6658391c178cb35858c9c465e1839fb0}
+
+
+copy \hyperlink{class_b_s_tree}{B\+S\+Tree} constructor 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+creates a parameterized \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_b_s_tree}{B\+S\+Tree}} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!````~B\+S\+Tree@{$\sim$\+B\+S\+Tree}}
+\index{````~B\+S\+Tree@{$\sim$\+B\+S\+Tree}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{$\sim$\+B\+S\+Tree()}{~BSTree()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::$\sim${\bf B\+S\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}{}\label{class_b_s_tree_a968c51c539f4ae41357c78b6a60fea4c}
+
+
+default \hyperlink{class_b_s_tree}{B\+S\+Tree} destructor 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{clear()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{B\+S\+Tree@{B\+S\+Tree}!clear@{clear}}
+\index{clear@{clear}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{}\label{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}
+
+
+\hyperlink{class_b_s_tree_a926822d08f3d0321603f9fafd2254b16}{clear()} function that calls \hyperlink{class_b_s_tree_a495825dc4b57ad4a2d1afa5836c04fe3}{clear\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_a495825dc4b57ad4a2d1afa5836c04fe3}{clear\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!clear\+\_\+\+Helper@{clear\+\_\+\+Helper}}
+\index{clear\+\_\+\+Helper@{clear\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{clear\+\_\+\+Helper(\+B\+S\+Tree\+Node $\ast$\&ptr)}{clear_Helper(BSTreeNode *&ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::clear\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a495825dc4b57ad4a2d1afa5836c04fe3}{}\label{class_b_s_tree_a495825dc4b57ad4a2d1afa5836c04fe3}
+
+
+Removes all data from \hyperlink{class_b_s_tree}{B\+S\+Tree}. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Removes all data from \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!copy\+Constructor\+\_\+\+Helper@{copy\+Constructor\+\_\+\+Helper}}
+\index{copy\+Constructor\+\_\+\+Helper@{copy\+Constructor\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{copy\+Constructor\+\_\+\+Helper(\+B\+S\+Tree\+Node $\ast$\&end, B\+S\+Tree\+Node $\ast$start)}{copyConstructor_Helper(BSTreeNode *&end, BSTreeNode *start)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::copy\+Constructor\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{end, }
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a58f01e37aba1a3589d6a0527e8fd3b2b}{}\label{class_b_s_tree_a58f01e37aba1a3589d6a0527e8fd3b2b}
+
+
+Copy constructor helper that sets current \hyperlink{class_b_s_tree}{B\+S\+Tree} equal to another. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets the current \hyperlink{class_b_s_tree}{B\+S\+Tree} equal to another 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em (2)} & B\+S\+Tree\+Nodes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Count() const }{getCount() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::get\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{}\label{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}
+
+
+\hyperlink{class_b_s_tree_a880d98553153533d3c29504e8a272c7d}{get\+Count()} function that calls \hyperlink{class_b_s_tree_ac27b5f03e47d553c28e26e37b61e6cc0}{get\+Count\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_ac27b5f03e47d553c28e26e37b61e6cc0}{get\+Count\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get\+Count\+\_\+\+Helper(root) 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!get\+Count\+\_\+\+Helper@{get\+Count\+\_\+\+Helper}}
+\index{get\+Count\+\_\+\+Helper@{get\+Count\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Count\+\_\+\+Helper(\+B\+S\+Tree\+Node $\ast$ptr) const }{getCount_Helper(BSTreeNode *ptr) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::get\+Count\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_ac27b5f03e47d553c28e26e37b61e6cc0}{}\label{class_b_s_tree_ac27b5f03e47d553c28e26e37b61e6cc0}
+
+
+Counts the height of the \hyperlink{class_b_s_tree}{B\+S\+Tree} while recursively traversing itself. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Returns the height of the \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+it will return 0 if empty, otherwise it will recursively traverse itself and add the total plus 1 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Height() const }{getHeight() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{}\label{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}
+
+
+\hyperlink{class_b_s_tree_a3850adc6b8ae965ec11ec0e0567b6f7d}{get\+Height()} function that calls \hyperlink{class_b_s_tree_acf3a9c10926e83c62d02a415f01911c0}{get\+Height\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_acf3a9c10926e83c62d02a415f01911c0}{get\+Height\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+get\+Height\+\_\+\+Helper(root, 0) 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!get\+Height\+\_\+\+Helper@{get\+Height\+\_\+\+Helper}}
+\index{get\+Height\+\_\+\+Helper@{get\+Height\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{get\+Height\+\_\+\+Helper(\+B\+S\+Tree\+Node $\ast$ptr, int current\+Height) const }{getHeight_Helper(BSTreeNode *ptr, int currentHeight) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ int {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::get\+Height\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{ptr, }
+\item[{int}]{current\+Height}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_acf3a9c10926e83c62d02a415f01911c0}{}\label{class_b_s_tree_acf3a9c10926e83c62d02a415f01911c0}
+
+
+Counts the number of data items in the \hyperlink{class_b_s_tree}{B\+S\+Tree} and returns its value. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Returns the count of the number of data items in \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node}} & and Int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+max\+Height 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!insert@{insert}}
+\index{insert@{insert}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{insert(const Data\+Type \&new\+Data\+Item)}{insert(const DataType &newDataItem)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{}\label{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}
+
+
+\hyperlink{class_b_s_tree_ab86b4cea496ee53076021126423d51fd}{insert()} function that calls \hyperlink{class_b_s_tree_a8db9e377d980f427645c02234f06b550}{insert\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_a8db9e377d980f427645c02234f06b550}{insert\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Datatype} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!insert\+\_\+\+Helper@{insert\+\_\+\+Helper}}
+\index{insert\+\_\+\+Helper@{insert\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{insert\+\_\+\+Helper(const Data\+Type \&new\+Data\+Item, B\+S\+Tree\+Node $\ast$\&ptr)}{insert_Helper(const DataType &newDataItem, BSTreeNode *&ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::insert\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item, }
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a8db9e377d980f427645c02234f06b550}{}\label{class_b_s_tree_a8db9e377d980f427645c02234f06b550}
+
+
+Inserts a new node containing new\+Data\+Item. If it exists, then it updates the data item with new\+Data\+Item. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Inserts a new node containing new\+Data\+Item 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & variable and a \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{is\+Empty() const }{isEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{}\label{class_b_s_tree_a43768375369ca8fe641a86451997ad45}
+
+
+\hyperlink{class_b_s_tree_a43768375369ca8fe641a86451997ad45}{is\+Empty()} function that checks if root is equal to N\+U\+LL 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true is \hyperlink{class_b_s_tree}{B\+S\+Tree} = N\+U\+LL, false if not 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{operator=(const B\+S\+Tree$<$ Data\+Type, Key\+Type $>$ \&other)}{operator=(const BSTree< DataType, KeyType > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \& {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}{}\label{class_b_s_tree_ac36b0b564aa3c411c239d730f506f448}
+
+
+overloaded assignment operator 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_a58f01e37aba1a3589d6a0527e8fd3b2b}{copy\+Constructor\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets the current \hyperlink{class_b_s_tree}{B\+S\+Tree} equal to another 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_b_s_tree}{B\+S\+Tree}} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the current \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!remove@{remove}}
+\index{remove@{remove}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{remove(const Key\+Type \&delete\+Key)}{remove(const KeyType &deleteKey)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::remove (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{delete\+Key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{}\label{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}
+
+
+\hyperlink{class_b_s_tree_a755549f7b88d0178a96ca84afd5e04cf}{remove()} function that calls \hyperlink{class_b_s_tree_ab70fca446ea4c79b1b73a82b96b98d4f}{remove\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_ab70fca446ea4c79b1b73a82b96b98d4f}{remove\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Key\+Type} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!remove\+\_\+\+Helper@{remove\+\_\+\+Helper}}
+\index{remove\+\_\+\+Helper@{remove\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{remove\+\_\+\+Helper(const Key\+Type \&delete\+Key, B\+S\+Tree\+Node $\ast$\&ptr)}{remove_Helper(const KeyType &deleteKey, BSTreeNode *&ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::remove\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{delete\+Key, }
+\item[{{\bf B\+S\+Tree\+Node} $\ast$\&}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_ab70fca446ea4c79b1b73a82b96b98d4f}{}\label{class_b_s_tree_ab70fca446ea4c79b1b73a82b96b98d4f}
+
+
+Delete data item with key delete\+Key from the \hyperlink{class_b_s_tree}{B\+S\+Tree}. If data is found, returns true. Else, it returns false. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Deletes the data item from \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Key\+Type} & variable and \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if ptr is equal to N\+U\+LL, true if it completes any of the 4 cases below, else it recursively searches itself 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{retrieve(const Key\+Type \&search\+Key, Data\+Type \&search\+Data\+Item) const }{retrieve(const KeyType &searchKey, DataType &searchDataItem) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::retrieve (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{search\+Key, }
+\item[{Data\+Type \&}]{search\+Data\+Item}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{}\label{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}
+
+
+\hyperlink{class_b_s_tree_a4359bfee390669b5adaf0380ef62b18d}{retrieve()} function that calls \hyperlink{class_b_s_tree_a331b572e91929d110ea21ec46bc4bcd0}{retrieve\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_a331b572e91929d110ea21ec46bc4bcd0}{retrieve\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Key\+Type} & and Datatype variables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!retrieve\+\_\+\+Helper@{retrieve\+\_\+\+Helper}}
+\index{retrieve\+\_\+\+Helper@{retrieve\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{retrieve\+\_\+\+Helper(const Key\+Type \&search\+Key, Data\+Type \&search\+Data\+Item, B\+S\+Tree\+Node $\ast$ptr) const }{retrieve_Helper(const KeyType &searchKey, DataType &searchDataItem, BSTreeNode *ptr) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ bool {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::retrieve\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{search\+Key, }
+\item[{Data\+Type \&}]{search\+Data\+Item, }
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a331b572e91929d110ea21ec46bc4bcd0}{}\label{class_b_s_tree_a331b572e91929d110ea21ec46bc4bcd0}
+
+
+Searches \hyperlink{class_b_s_tree}{B\+S\+Tree} for data item with the same key as search\+Key; if found, replaces data item with search\+Data\+Item and returns true. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Searches \hyperlink{class_b_s_tree}{B\+S\+Tree} using search\+Key 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Key\+Type,Data\+Type} & variables \& \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if ptr is equal to N\+U\+LL, true if search\+Data\+Item is equal to data item, else recursively searches itself 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!show\+Helper@{show\+Helper}}
+\index{show\+Helper@{show\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{show\+Helper(\+B\+S\+Tree\+Node $\ast$p, int level) const }{showHelper(BSTreeNode *p, int level) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::show\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{p, }
+\item[{int}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}{}\label{class_b_s_tree_a44b3002e3476eb410468a4b9aaaa73ef}
+\index{B\+S\+Tree@{B\+S\+Tree}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{show\+Structure() const }{showStructure() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}{}\label{class_b_s_tree_ac28277cacbf8ab33326473a419abf097}
+\index{B\+S\+Tree@{B\+S\+Tree}!write\+Keys@{write\+Keys}}
+\index{write\+Keys@{write\+Keys}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{write\+Keys() const }{writeKeys() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::write\+Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{}\label{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}
+
+
+\hyperlink{class_b_s_tree_a7f08f48e6d1bbe3eb726856a947325e7}{write\+Keys()} function that calls \hyperlink{class_b_s_tree_a41d50aacd563ee862fae2ad9cc9072f2}{write\+Keys\+\_\+\+Helper()} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_b_s_tree_a41d50aacd563ee862fae2ad9cc9072f2}{write\+Keys\+\_\+\+Helper()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{B\+S\+Tree@{B\+S\+Tree}!write\+Keys\+\_\+\+Helper@{write\+Keys\+\_\+\+Helper}}
+\index{write\+Keys\+\_\+\+Helper@{write\+Keys\+\_\+\+Helper}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{write\+Keys\+\_\+\+Helper(\+B\+S\+Tree\+Node $\ast$ptr) const }{writeKeys_Helper(BSTreeNode *ptr) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , class Key\+Type $>$ void {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::write\+Keys\+\_\+\+Helper (
+\begin{DoxyParamCaption}
+\item[{{\bf B\+S\+Tree\+Node} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a41d50aacd563ee862fae2ad9cc9072f2}{}\label{class_b_s_tree_a41d50aacd563ee862fae2ad9cc9072f2}
+
+
+Outputs the keys of the data items in the \hyperlink{class_b_s_tree}{B\+S\+Tree}. They are output in ascending order. 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Outputs keys of data items in \hyperlink{class_b_s_tree}{B\+S\+Tree} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_b_s_tree_1_1_b_s_tree_node}{B\+S\+Tree\+Node}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{B\+S\+Tree@{B\+S\+Tree}!root@{root}}
+\index{root@{root}!B\+S\+Tree@{B\+S\+Tree}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type, class Key\+Type$>$ {\bf B\+S\+Tree\+Node}$\ast$ {\bf B\+S\+Tree}$<$ Data\+Type, Key\+Type $>$\+::root\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_b_s_tree_a83534afce9094181ac031f9f596a8625}{}\label{class_b_s_tree_a83534afce9094181ac031f9f596a8625}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_b_s_tree_8h}{B\+S\+Tree.\+h}\item 
+\hyperlink{_b_s_tree_8cpp}{B\+S\+Tree.\+cpp}\end{DoxyCompactItemize}

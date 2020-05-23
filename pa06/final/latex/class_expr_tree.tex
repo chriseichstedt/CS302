@@ -1,0 +1,282 @@
+\hypertarget{class_expr_tree}{}\section{Expr\+Tree$<$ Data\+Type $>$ Class Template Reference}
+\label{class_expr_tree}\index{Expr\+Tree$<$ Data\+Type $>$@{Expr\+Tree$<$ Data\+Type $>$}}
+
+
+{\ttfamily \#include $<$Expression\+Tree.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}{Expr\+Tree} ()
+\begin{DoxyCompactList}\small\item\em default constructor for \hyperlink{class_expr_tree}{Expr\+Tree} class \end{DoxyCompactList}\item 
+\hyperlink{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}{Expr\+Tree} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source)
+\begin{DoxyCompactList}\small\item\em default copy constructor for \hyperlink{class_expr_tree}{Expr\+Tree} class \end{DoxyCompactList}\item 
+\hyperlink{class_expr_tree}{Expr\+Tree} \& \hyperlink{class_expr_tree_a9a7b2120af2c2df666b1154eec20008a}{operator=} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source)
+\begin{DoxyCompactList}\small\item\em overloaded operator for \hyperlink{class_expr_tree}{Expr\+Tree} class \end{DoxyCompactList}\item 
+\hyperlink{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}{$\sim$\+Expr\+Tree} ()
+\begin{DoxyCompactList}\small\item\em default destructor for \hyperlink{class_expr_tree}{Expr\+Tree} class \end{DoxyCompactList}\item 
+void \hyperlink{class_expr_tree_a283a61049eb163f6f370d562cc92c824}{build} ()
+\begin{DoxyCompactList}\small\item\em builds the tree with the use of build\+\_\+\+Helper() \end{DoxyCompactList}\item 
+void \hyperlink{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}{expression} () const 
+\begin{DoxyCompactList}\small\item\em prints out the expressions in the tree with the use of expression\+\_\+\+Helper() \end{DoxyCompactList}\item 
+Data\+Type \hyperlink{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}{evaluate} () const   throw (logic\+\_\+error)
+\begin{DoxyCompactList}\small\item\em prints out the total value of the equation stored in the tree with the use of evaluate\+\_\+\+Helper() \end{DoxyCompactList}\item 
+void \hyperlink{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{clear} ()
+\begin{DoxyCompactList}\small\item\em deletes the entirety of the tree with the use of clear\+\_\+\+Helper() \end{DoxyCompactList}\item 
+void \hyperlink{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}{commute} ()
+\begin{DoxyCompactList}\small\item\em applies the commutative property with the use of the commute\+\_\+\+Helper() \end{DoxyCompactList}\item 
+bool \hyperlink{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}{is\+Equivalent} (const \hyperlink{class_expr_tree}{Expr\+Tree} \&source) const 
+\item 
+void \hyperlink{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}{show\+Structure} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{Expr\+Tree()}{ExprTree()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::{\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}{}\label{class_expr_tree_a1d5004443b461637bcb0fe0a86759d50}
+
+
+default constructor for \hyperlink{class_expr_tree}{Expr\+Tree} class 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets root equal to null 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\index{Expr\+Tree@{Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{Expr\+Tree(const Expr\+Tree \&source)}{ExprTree(const ExprTree &source)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::{\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}{}\label{class_expr_tree_aeec9dc6139cf32fcc911840bab438239}
+
+
+default copy constructor for \hyperlink{class_expr_tree}{Expr\+Tree} class 
+
+\begin{DoxyPrecond}{Precondition}
+copy\+Constructor\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets current tree equal to parameterized tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em predefined} & \hyperlink{class_expr_tree}{Expr\+Tree} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this, which is the current list whether its identical or needs to be rebuilt 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!````~Expr\+Tree@{$\sim$\+Expr\+Tree}}
+\index{````~Expr\+Tree@{$\sim$\+Expr\+Tree}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{$\sim$\+Expr\+Tree()}{~ExprTree()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$\+::$\sim${\bf Expr\+Tree} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}{}\label{class_expr_tree_a8976e9af7e1209b9db475b863ab9f31d}
+
+
+default destructor for \hyperlink{class_expr_tree}{Expr\+Tree} class 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{clear()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+destroys the current tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Expr\+Tree@{Expr\+Tree}!build@{build}}
+\index{build@{build}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{build()}{build()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::build (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_a283a61049eb163f6f370d562cc92c824}{}\label{class_expr_tree_a283a61049eb163f6f370d562cc92c824}
+
+
+builds the tree with the use of build\+\_\+\+Helper() 
+
+\begin{DoxyPrecond}{Precondition}
+build\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+builds an Expression Tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!clear@{clear}}
+\index{clear@{clear}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}{}\label{class_expr_tree_a87d6593a3ad6199b5521f6d1e3ba851f}
+
+
+deletes the entirety of the tree with the use of clear\+\_\+\+Helper() 
+
+\begin{DoxyPrecond}{Precondition}
+clear\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+destroys the current tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!commute@{commute}}
+\index{commute@{commute}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{commute()}{commute()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::commute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}{}\label{class_expr_tree_a8bfcf0da6dfd93f4228a35cded704fb4}
+
+
+applies the commutative property with the use of the commute\+\_\+\+Helper() 
+
+\begin{DoxyPrecond}{Precondition}
+commmute\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+applies the commutative property to the current expressions stored in the tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{evaluate() const }{evaluate() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ Data\+Type {\bf Expr\+Tree}$<$ Data\+Type $>$\+::evaluate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  logic\+\_\+error) }\hypertarget{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}{}\label{class_expr_tree_ad1579e64d55cdfcd500a634ef69ed792}
+
+
+prints out the total value of the equation stored in the tree with the use of evaluate\+\_\+\+Helper() 
+
+\begin{DoxyPrecond}{Precondition}
+evaluate\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+evaluate\+\_\+\+Helper(), using root as the start location 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!expression@{expression}}
+\index{expression@{expression}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{expression() const }{expression() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::expression (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}{}\label{class_expr_tree_ac367645dc4ccaf488e121cd5a0a8c07d}
+
+
+prints out the expressions in the tree with the use of expression\+\_\+\+Helper() 
+
+\begin{DoxyPrecond}{Precondition}
+expression\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!is\+Equivalent@{is\+Equivalent}}
+\index{is\+Equivalent@{is\+Equivalent}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{is\+Equivalent(const Expr\+Tree \&source) const }{isEquivalent(const ExprTree &source) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ bool {\bf Expr\+Tree}$<$ Data\+Type $>$\+::is\+Equivalent (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}{}\label{class_expr_tree_ae64a4e3b5008fa2f533fd7461ead2485}
+\index{Expr\+Tree@{Expr\+Tree}!operator=@{operator=}}
+\index{operator=@{operator=}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{operator=(const Expr\+Tree \&source)}{operator=(const ExprTree &source)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ {\bf Expr\+Tree}$<$ Data\+Type $>$ \& {\bf Expr\+Tree}$<$ Data\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr\+Tree}$<$ Data\+Type $>$ \&}]{source}
+\end{DoxyParamCaption}
+)}\hypertarget{class_expr_tree_a9a7b2120af2c2df666b1154eec20008a}{}\label{class_expr_tree_a9a7b2120af2c2df666b1154eec20008a}
+
+
+overloaded operator for \hyperlink{class_expr_tree}{Expr\+Tree} class 
+
+\begin{DoxyPrecond}{Precondition}
+copy\+Constructor\+\_\+\+Helper() 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets current tree equal to parameterized tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em predefined} & \hyperlink{class_expr_tree}{Expr\+Tree} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this, which is the current list whether its identical or needs to be rebuilt 
+\end{DoxyReturn}
+\index{Expr\+Tree@{Expr\+Tree}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Expr\+Tree@{Expr\+Tree}}
+\subsubsection[{\texorpdfstring{show\+Structure() const }{showStructure() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type $>$ void {\bf Expr\+Tree}$<$ Data\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}{}\label{class_expr_tree_a6f4c5e2ae8224fb53fb893231814e6d9}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_expression_tree_8h}{Expression\+Tree.\+h}\item 
+\hyperlink{_expression_tree_8cpp}{Expression\+Tree.\+cpp}\end{DoxyCompactItemize}

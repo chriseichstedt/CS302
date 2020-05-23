@@ -1,0 +1,357 @@
+\hypertarget{class_heap}{}\section{Heap$<$ Data\+Type, Key\+Type, Comparator $>$ Class Template Reference}
+\label{class_heap}\index{Heap$<$ Data\+Type, Key\+Type, Comparator $>$@{Heap$<$ Data\+Type, Key\+Type, Comparator $>$}}
+
+
+{\ttfamily \#include $<$Heap.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_heap_ae17e34e3c86d88263a8fdf80b9ba78fc}{Heap} (int max\+Number=\hyperlink{class_heap_a967c19732a20a72e8e824402ad6763c8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE})
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Constructor. Creates an empty heap. Allocates enoughy memory for a heap containing max\+Number data items.\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{class_heap_a97e3b462be1c6af31d7519546bba8907}{Heap} (const \hyperlink{class_heap}{Heap} \&other)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Copy constructor. Initializes the object to be an equivalent copy of other.\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{class_heap}{Heap} \& \hyperlink{class_heap_a5ed119341c39bcea1437321d4247dd40}{operator=} (const \hyperlink{class_heap}{Heap} \&other)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Overloaded assignment operator. Sets the heap to be equivalent to the other Heap and returns a reference to this object.\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{class_heap_a555ade7891007de959bef0ee53e28767}{$\sim$\+Heap} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Destructor. Deallocates (free) the memory used to store the heap.\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{class_heap_aa68cf80454ab1b246fa723612805a91e}{insert} (const Data\+Type \&new\+Data\+Item)  throw ( logic\+\_\+error )
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Inserts new\+Data\+Item into the heap. Inserts this data item as the bottom rightmost data item in the heap and moves it upward until the properties that define a heap are restored.\char`\"{} \end{DoxyCompactList}\item 
+Data\+Type \hyperlink{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}{remove} ()  throw ( logic\+\_\+error )
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Removes the data item with the highest priority (the root) from the heap and returns it. Replaces the root data item with the bottom rightmost data item and moves this data item downward until the properties that define a heap are restored.\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{class_heap_a19a78c8eae2cf7c8253e34e54d86ed73}{clear} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Removes all the data items in the heap.\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{class_heap_ab8fa26d416ac0e27dfcbf18c54f8f73f}{is\+Empty} () const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Returns true if the heap is empty. Otherwise, returns false.\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{class_heap_ac9111b884c74a376240e0155a788756e}{is\+Full} () const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Returns true if the heap is full. Otherwise, returns false.\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{class_heap_a3ae1e1f27a145749c8b9f2da777cb8bc}{show\+Structure} () const 
+\item 
+void \hyperlink{class_heap_a4bdb1772ea92899de245d6cbd217d085}{write\+Levels} () const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Outputs the data items in a heap in level order, one level per line. Only outputs each data item\textquotesingle{}s priority. If the heap is empty, then outputs \textquotesingle{}\+Empty heap\textquotesingle{}.\char`\"{} \end{DoxyCompactList}\item 
+int \hyperlink{class_heap_a35ffb267d73fdd5c106f82459b69cf2f}{get\+Left\+Child} (const int node\+Index) const 
+\begin{DoxyCompactList}\small\item\em returns the left child \end{DoxyCompactList}\item 
+int \hyperlink{class_heap_ae367797460e0f8923b72c1379ec9a9c2}{get\+Right\+Child} (const int node\+Index) const 
+\begin{DoxyCompactList}\small\item\em returns the right child \end{DoxyCompactList}\item 
+int \hyperlink{class_heap_a524cd0cd256e21b565f04b26297c0fd8}{get\+Parent} (const int node\+Index) const 
+\begin{DoxyCompactList}\small\item\em returns the parent \end{DoxyCompactList}\item 
+void \hyperlink{class_heap_a08cf707b0057b977fc1896bf38800027}{sort\+Up} (const int node\+Index)
+\begin{DoxyCompactList}\small\item\em The sort\+Up function that recursively sorts for \hyperlink{class_heap_aa68cf80454ab1b246fa723612805a91e}{insert()} \end{DoxyCompactList}\item 
+void \hyperlink{class_heap_a31eaa08f4ad1159b6272e0e32486702c}{sort\+Down} (const int node\+Index)
+\begin{DoxyCompactList}\small\item\em The sort\+Down function that recursively sorts for \hyperlink{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}{remove()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_heap_a967c19732a20a72e8e824402ad6763c8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE} = 10
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Heap@{Heap}!Heap@{Heap}}
+\index{Heap@{Heap}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{Heap(int max\+Number=\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E)}{Heap(int maxNumber=DEFAULT_MAX_HEAP_SIZE)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::{\bf Heap} (
+\begin{DoxyParamCaption}
+\item[{int}]{max\+Number = {\ttfamily {\bf D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_ae17e34e3c86d88263a8fdf80b9ba78fc}{}\label{class_heap_ae17e34e3c86d88263a8fdf80b9ba78fc}
+
+
+\char`\"{}\+Constructor. Creates an empty heap. Allocates enoughy memory for a heap containing max\+Number data items.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & max\+Number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Heap@{Heap}!Heap@{Heap}}
+\index{Heap@{Heap}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{Heap(const Heap \&other)}{Heap(const Heap &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::{\bf Heap} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_a97e3b462be1c6af31d7519546bba8907}{}\label{class_heap_a97e3b462be1c6af31d7519546bba8907}
+
+
+\char`\"{}\+Copy constructor. Initializes the object to be an equivalent copy of other.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_heap}{Heap}\& other \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Heap@{Heap}!````~Heap@{$\sim$\+Heap}}
+\index{````~Heap@{$\sim$\+Heap}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{$\sim$\+Heap()}{~Heap()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::$\sim${\bf Heap} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_a555ade7891007de959bef0ee53e28767}{}\label{class_heap_a555ade7891007de959bef0ee53e28767}
+
+
+\char`\"{}\+Destructor. Deallocates (free) the memory used to store the heap.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Heap@{Heap}!clear@{clear}}
+\index{clear@{clear}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_a19a78c8eae2cf7c8253e34e54d86ed73}{}\label{class_heap_a19a78c8eae2cf7c8253e34e54d86ed73}
+
+
+\char`\"{}\+Removes all the data items in the heap.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Heap@{Heap}!get\+Left\+Child@{get\+Left\+Child}}
+\index{get\+Left\+Child@{get\+Left\+Child}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{get\+Left\+Child(const int node\+Index) const }{getLeftChild(const int nodeIndex) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::get\+Left\+Child (
+\begin{DoxyParamCaption}
+\item[{const int}]{node\+Index}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_a35ffb267d73fdd5c106f82459b69cf2f}{}\label{class_heap_a35ffb267d73fdd5c106f82459b69cf2f}
+
+
+returns the left child 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int node\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(2 $\ast$ node\+Index + 1) 
+\end{DoxyReturn}
+\index{Heap@{Heap}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{get\+Parent(const int node\+Index) const }{getParent(const int nodeIndex) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::get\+Parent (
+\begin{DoxyParamCaption}
+\item[{const int}]{node\+Index}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_a524cd0cd256e21b565f04b26297c0fd8}{}\label{class_heap_a524cd0cd256e21b565f04b26297c0fd8}
+
+
+returns the parent 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int node\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(node\+Index / 2) -\/ 1 or (node\+Index / 2) 
+\end{DoxyReturn}
+\index{Heap@{Heap}!get\+Right\+Child@{get\+Right\+Child}}
+\index{get\+Right\+Child@{get\+Right\+Child}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{get\+Right\+Child(const int node\+Index) const }{getRightChild(const int nodeIndex) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::get\+Right\+Child (
+\begin{DoxyParamCaption}
+\item[{const int}]{node\+Index}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_ae367797460e0f8923b72c1379ec9a9c2}{}\label{class_heap_ae367797460e0f8923b72c1379ec9a9c2}
+
+
+returns the right child 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int node\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(2 $\ast$ node\+Index + 2) 
+\end{DoxyReturn}
+\index{Heap@{Heap}!insert@{insert}}
+\index{insert@{insert}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{insert(const Data\+Type \&new\+Data\+Item)}{insert(const DataType &newDataItem)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type, typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }\hypertarget{class_heap_aa68cf80454ab1b246fa723612805a91e}{}\label{class_heap_aa68cf80454ab1b246fa723612805a91e}
+
+
+\char`\"{}\+Inserts new\+Data\+Item into the heap. Inserts this data item as the bottom rightmost data item in the heap and moves it upward until the properties that define a heap are restored.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & Data\+Type\& new\+Data\+Item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Heap@{Heap}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{is\+Empty() const }{isEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ bool {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_ab8fa26d416ac0e27dfcbf18c54f8f73f}{}\label{class_heap_ab8fa26d416ac0e27dfcbf18c54f8f73f}
+
+
+\char`\"{}\+Returns true if the heap is empty. Otherwise, returns false.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\index{Heap@{Heap}!is\+Full@{is\+Full}}
+\index{is\+Full@{is\+Full}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{is\+Full() const }{isFull() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ bool {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::is\+Full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_ac9111b884c74a376240e0155a788756e}{}\label{class_heap_ac9111b884c74a376240e0155a788756e}
+
+
+\char`\"{}\+Returns true if the heap is full. Otherwise, returns false.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\index{Heap@{Heap}!operator=@{operator=}}
+\index{operator=@{operator=}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{operator=(const Heap \&other)}{operator=(const Heap &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$ \& {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_a5ed119341c39bcea1437321d4247dd40}{}\label{class_heap_a5ed119341c39bcea1437321d4247dd40}
+
+
+\char`\"{}\+Overloaded assignment operator. Sets the heap to be equivalent to the other Heap and returns a reference to this object.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_heap}{Heap}\& other \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\index{Heap@{Heap}!remove@{remove}}
+\index{remove@{remove}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{remove()}{remove()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ Data\+Type {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }\hypertarget{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}{}\label{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}
+
+
+\char`\"{}\+Removes the data item with the highest priority (the root) from the heap and returns it. Replaces the root data item with the bottom rightmost data item and moves this data item downward until the properties that define a heap are restored.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Datatype temp 
+\end{DoxyReturn}
+\index{Heap@{Heap}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{show\+Structure() const }{showStructure() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_a3ae1e1f27a145749c8b9f2da777cb8bc}{}\label{class_heap_a3ae1e1f27a145749c8b9f2da777cb8bc}
+\index{Heap@{Heap}!sort\+Down@{sort\+Down}}
+\index{sort\+Down@{sort\+Down}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{sort\+Down(const int node\+Index)}{sortDown(const int nodeIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::sort\+Down (
+\begin{DoxyParamCaption}
+\item[{const int}]{node\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_a31eaa08f4ad1159b6272e0e32486702c}{}\label{class_heap_a31eaa08f4ad1159b6272e0e32486702c}
+
+
+The sort\+Down function that recursively sorts for \hyperlink{class_heap_a4a18bfdacd897c45fc3da13f22b8930d}{remove()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int node\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Heap@{Heap}!sort\+Up@{sort\+Up}}
+\index{sort\+Up@{sort\+Up}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{sort\+Up(const int node\+Index)}{sortUp(const int nodeIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::sort\+Up (
+\begin{DoxyParamCaption}
+\item[{const int}]{node\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_heap_a08cf707b0057b977fc1896bf38800027}{}\label{class_heap_a08cf707b0057b977fc1896bf38800027}
+
+
+The sort\+Up function that recursively sorts for \hyperlink{class_heap_aa68cf80454ab1b246fa723612805a91e}{insert()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & int node\+Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Heap@{Heap}!write\+Levels@{write\+Levels}}
+\index{write\+Levels@{write\+Levels}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{write\+Levels() const }{writeLevels() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type , typename Comparator $>$ void {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::write\+Levels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_heap_a4bdb1772ea92899de245d6cbd217d085}{}\label{class_heap_a4bdb1772ea92899de245d6cbd217d085}
+
+
+\char`\"{}\+Outputs the data items in a heap in level order, one level per line. Only outputs each data item\textquotesingle{}s priority. If the heap is empty, then outputs \textquotesingle{}\+Empty heap\textquotesingle{}.\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\index{Heap@{Heap}!D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE}}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE@{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE}!Heap@{Heap}}
+\subsubsection[{\texorpdfstring{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE}{DEFAULT_MAX_HEAP_SIZE}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type, typename Key\+Type = int, typename Comparator = Less$<$\+Key\+Type$>$$>$ const int {\bf Heap}$<$ Data\+Type, Key\+Type, Comparator $>$\+::D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+A\+X\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE = 10\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_heap_a967c19732a20a72e8e824402ad6763c8}{}\label{class_heap_a967c19732a20a72e8e824402ad6763c8}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_heap_8h}{Heap.\+h}\item 
+\hyperlink{_heap_8cpp}{Heap.\+cpp}\item 
+\hyperlink{show11_8cpp}{show11.\+cpp}\end{DoxyCompactItemize}

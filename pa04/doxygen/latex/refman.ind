@@ -1,0 +1,23 @@
+\begin{theindex}
+
+  \item {get\+Elapsed\+Time}
+    \subitem {Timer}, \hyperpage{6}
+
+  \indexspace
+
+  \item {start}
+    \subitem {Timer}, \hyperpage{6}
+  \item {stop}
+    \subitem {Timer}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Timer}, \hyperpage{5}
+    \subitem {get\+Elapsed\+Time}, \hyperpage{6}
+    \subitem {start}, \hyperpage{6}
+    \subitem {stop}, \hyperpage{7}
+    \subitem {Timer}, \hyperpage{5}
+  \item {Timer.\+cpp}, \hyperpage{9}
+  \item {Timer.\+h}, \hyperpage{9}
+
+\end{theindex}

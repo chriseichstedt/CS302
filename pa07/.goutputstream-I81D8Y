@@ -1,0 +1,292 @@
+/**
+@file  BSTree.cpp
+@author  Christopher Eichstedt
+@brief  An implementation file for a Binary Search Tree
+**/
+
+#include "BSTree.h"
+
+//////////////////////////////////////////////////////////////////////////
+//function declarations
+//////////////////////////////////////////////////////////////////////////
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename Datatype, typename KeyType>
+BSTree <DataType, KeyType> :: BSTreeNode :: BSTreeNode(const DataType &nodeDataItem, BSTreeNode *leftPtr, BSTreeNode *rightPtr)
+{
+	dataItem = nodeDataItem;
+	left = leftPtr;
+	right = rightPtr;
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+BSTree <DataType, KeyType> :: BSTree()
+{
+	root = NULL;	
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+BSTree <DataType, KeyType> :: BSTree(const BSTree<DataType, KeyType> &other)
+{
+	*this = other;
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+BSTree <DataType, KeyType>& BSTree <DataType, KeyType> :: operator=(const BSTree<DataType, KeyType>& other)
+{
+	if(*this == source)
+	{
+		return *this;
+	}
+	
+	else
+	{
+		copyConstructor_helper(root, source.root);
+		return *this;
+	}
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+BSTree <DataType, KeyType> :: ~BSTree()
+{
+	clear();
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+void BSTree <DataType, KeyType> :: insert(const DataType& newDataItem)
+{
+	insert_Helper(newDataItem, root);
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+bool BSTree <DataType, KeyType> :: retrieve(const KeyType& searchKey, DataType& searchDataItem ) const
+{
+	retrieve_Helper(searchKey, searcbDataItem, root);
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+bool BSTree <DataType, KeyType> :: remove(const KeyType& deleteKey)
+{
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+void BSTree <DataType, KeyType> :: writeKeys() const
+{
+} 
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+void BSTree <DataType, KeyType> :: clear()
+{
+	clear_Helper(root);
+}
+
+//////////////////////////////////////////////////////////////////////////
+//function helper declarations
+//////////////////////////////////////////////////////////////////////////
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+void BSTree <DataType, KeyType> :: copyConstructor_Helper(BSTreeNode *&end, BSTreeNode *start)
+{	
+	if(start == NULL)
+	{
+		return;
+	}
+	
+	else
+	{
+		BSTreeNode *left = NULL;
+		BSTreeNode *right = NULL;
+		
+		copyConstructor_Helper(left, start->left);
+		copyConstructor_Helper(right, start->right);
+		
+		end = new BSTreeNode(start->dataItem, left, right);
+	}
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+void BSTree <DataType, KeyType> :: clear_Helper(BSTreeNode *&ptr)
+{
+	if(ptr == NULL)
+	{
+		return;
+	}
+	
+	else
+	{
+		clear_Helper(ptr->left);
+		clear_Helper(ptr->right);
+		
+		delete ptr;
+		ptr = NULL;	
+	}
+}
+
+/**
+@pre
+@post
+@param
+@return
+@brief
+**/
+template <typename DataType, typename KeyType>
+void BSTree <DataType, KeyType> :: insert_Helper(const DataType& newDataItem, BSTreeNode* &ptr)
+{
+	if (ptr == NULL)
+	{
+		ptr = new BSTreeNode(newDataItem, NULL, NULL);
+	}
+	
+	else
+	{
+		if((ptr->dataItem).getKey() == newDataItem.getKey())
+		{
+			ptr->dataItem = newDataItem;
+		}
+		
+		if((ptr->dataItem).getKey() > newDataItem.getKey())
+		{
+			insert_Helper(newDataItem, ptr->left);
+		}
+		
+		if((ptr->dataItem).getKey() < newDataItem.getKey())
+		{
+			insert_Helper(newDataItem, ptr->right);
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////
+//showStructure function and helper (provided for this lab)
+//////////////////////////////////////////////////////////////////////////
+
+template < typename DataType, typename KeyType >
+void BSTree<DataType,KeyType>:: showStructure () const
+
+// Outputs the keys in a binary search tree. The tree is output
+// rotated counterclockwise 90 degrees from its conventional
+// orientation using a "reverse" inorder traversal. This operation is
+// intended for testing and debugging purposes only.
+
+{
+    if ( root == 0 )
+       cout << "Empty tree" << endl;
+    else
+    {
+       cout << endl;
+       showHelper(root,1);
+       cout << endl;
+    }
+}
+
+template < typename DataType, typename KeyType >
+void BSTree<DataType,KeyType>:: showHelper ( BSTreeNode *p,
+                               int level             ) const
+
+// Recursive helper for showStructure. 
+// Outputs the subtree whose root node is pointed to by p. 
+// Parameter level is the level of this node within the tree.
+
+{
+     int j;   // Loop counter
+
+     if ( p != 0 )
+     {
+        showHelper(p->right,level+1);         // Output right subtree
+        for ( j = 0 ; j < level ; j++ )    // Tab over to level
+            cout << "\t";
+        cout << " " << p->dataItem.getKey();   // Output key
+        if ( ( p->left != 0 ) &&           // Output "connector"
+             ( p->right != 0 ) )
+           cout << "<";
+        else if ( p->right != 0 )
+           cout << "/";
+        else if ( p->left != 0 )
+           cout << "\\";
+        cout << endl;
+        showHelper(p->left,level+1);          // Output left subtree
+    }
+}

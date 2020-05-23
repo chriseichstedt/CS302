@@ -1,0 +1,283 @@
+\hypertarget{class_hash_table}{}\section{Hash\+Table$<$ Data\+Type, Key\+Type $>$ Class Template Reference}
+\label{class_hash_table}\index{Hash\+Table$<$ Data\+Type, Key\+Type $>$@{Hash\+Table$<$ Data\+Type, Key\+Type $>$}}
+
+
+{\ttfamily \#include $<$Hash\+Table.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_hash_table_a103b09f30dbac0fe92fc2f1192feb0c1}{Hash\+Table} (int init\+Table\+Size)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Constructor. Creates the empty hash table.\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{class_hash_table_a5da00f8a0dc9dc745675a96eac228049}{Hash\+Table} (const \hyperlink{class_hash_table}{Hash\+Table} \&other)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Copy Constructor. Initializes the hash table to be equivalent to the Hash\+Table object parameter other.\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{class_hash_table}{Hash\+Table} \& \hyperlink{class_hash_table_add76a73a92b81a2d54c20078d4a76546}{operator=} (const \hyperlink{class_hash_table}{Hash\+Table} \&other)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Overloaded assignment operator. Sets the hash table to be equivalent to the other Hash\+Table object parameter and returns a reference to this object.\char`\"{} \end{DoxyCompactList}\item 
+\hyperlink{class_hash_table_ae25eb9c66b9bce8c9c04f18e22688a15}{$\sim$\+Hash\+Table} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Destructor. Deallocates (frees) the memory used to store a hash table.\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_table_adc8f2be061729bdc5ecb171b54304e17}{insert} (const Data\+Type \&new\+Data\+Item)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Inserts new\+Data\+Item into the appropriate binary search tree. If a data item with the same key as new\+Data\+Item already exists in the binary search tree, then updates the data item with new\+Data\+Item. Otherwise, it inserts it in the binary search tree.\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_a46d3f8ad70fd80dc7aa64f50676ef7a5}{remove} (const Key\+Type \&delete\+Key)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Searches the hash table for the data item with the key delete\+Key. If the data item is found, the removes the data item and returns true. Otherwise, returns false.\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_ad4ee3ff641daa330260a48de29492e66}{retrieve} (const Key\+Type \&search\+Key, Data\+Type \&return\+Item) const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Searches the hash table for the data item with key search\+Key. If the data item is found. then copies the data item to return\+Item and returns true. Otherwise, returns false with return\+Item undefined.\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}{clear} ()
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Removes all data items in the hash table.\char`\"{} \end{DoxyCompactList}\item 
+bool \hyperlink{class_hash_table_a101e211a7fca37cd90722e15df2fc571}{is\+Empty} () const 
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Returns true if the hash table is empty. Otherwise, returns false.\char`\"{} \end{DoxyCompactList}\item 
+void \hyperlink{class_hash_table_a8b875e57f71a5bbba394e42361fb9fb4}{show\+Structure} () const 
+\item 
+double \hyperlink{class_hash_table_a4db2d920fd7c632f5b4b1bacd503bbf1}{standard\+Deviation} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Hash\+Table(int init\+Table\+Size)}{HashTable(int initTableSize)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::{\bf Hash\+Table} (
+\begin{DoxyParamCaption}
+\item[{int}]{init\+Table\+Size}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_a103b09f30dbac0fe92fc2f1192feb0c1}{}\label{class_hash_table_a103b09f30dbac0fe92fc2f1192feb0c1}
+
+
+\char`\"{}\+Constructor. Creates the empty hash table.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+creates a \hyperlink{class_hash_table}{Hash\+Table} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{Hash\+Table(const Hash\+Table \&other)}{HashTable(const HashTable &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::{\bf Hash\+Table} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_a5da00f8a0dc9dc745675a96eac228049}{}\label{class_hash_table_a5da00f8a0dc9dc745675a96eac228049}
+
+
+\char`\"{}\+Copy Constructor. Initializes the hash table to be equivalent to the Hash\+Table object parameter other.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+copies a \hyperlink{class_hash_table}{Hash\+Table} from other to the current \hyperlink{class_hash_table}{Hash\+Table} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_hash_table}{Hash\+Table}} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!````~Hash\+Table@{$\sim$\+Hash\+Table}}
+\index{````~Hash\+Table@{$\sim$\+Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{$\sim$\+Hash\+Table()}{~HashTable()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::$\sim${\bf Hash\+Table} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_ae25eb9c66b9bce8c9c04f18e22688a15}{}\label{class_hash_table_ae25eb9c66b9bce8c9c04f18e22688a15}
+
+
+\char`\"{}\+Destructor. Deallocates (frees) the memory used to store a hash table.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}{clear()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+clears the current \hyperlink{class_hash_table}{Hash\+Table} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{Hash\+Table@{Hash\+Table}!clear@{clear}}
+\index{clear@{clear}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}{}\label{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}
+
+
+\char`\"{}\+Removes all data items in the hash table.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+all data items are removed from \hyperlink{class_hash_table}{Hash\+Table} 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!insert@{insert}}
+\index{insert@{insert}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{insert(const Data\+Type \&new\+Data\+Item)}{insert(const DataType &newDataItem)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::insert (
+\begin{DoxyParamCaption}
+\item[{const Data\+Type \&}]{new\+Data\+Item}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_adc8f2be061729bdc5ecb171b54304e17}{}\label{class_hash_table_adc8f2be061729bdc5ecb171b54304e17}
+
+
+\char`\"{}\+Inserts new\+Data\+Item into the appropriate binary search tree. If a data item with the same key as new\+Data\+Item already exists in the binary search tree, then updates the data item with new\+Data\+Item. Otherwise, it inserts it in the binary search tree.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+inserts the data item, or updates the current data item in the binary search tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Data\+Type} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{is\+Empty() const }{isEmpty() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ bool {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_hash_table_a101e211a7fca37cd90722e15df2fc571}{}\label{class_hash_table_a101e211a7fca37cd90722e15df2fc571}
+
+
+\char`\"{}\+Returns true if the hash table is empty. Otherwise, returns false.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns true or false, depending if \hyperlink{class_hash_table}{Hash\+Table} is empty 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if hash\+Table is empty, false if it isn\textquotesingle{}t 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!operator=@{operator=}}
+\index{operator=@{operator=}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{operator=(const Hash\+Table \&other)}{operator=(const HashTable &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \& {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_add76a73a92b81a2d54c20078d4a76546}{}\label{class_hash_table_add76a73a92b81a2d54c20078d4a76546}
+
+
+\char`\"{}\+Overloaded assignment operator. Sets the hash table to be equivalent to the other Hash\+Table object parameter and returns a reference to this object.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_hash_table_a57f581334e35d45a8822c03edc0fcca6}{clear()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets the current \hyperlink{class_hash_table}{Hash\+Table} equivalent to other 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_hash_table}{Hash\+Table}} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the current \hyperlink{class_hash_table}{Hash\+Table} 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!remove@{remove}}
+\index{remove@{remove}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{remove(const Key\+Type \&delete\+Key)}{remove(const KeyType &deleteKey)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ bool {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::remove (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{delete\+Key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_hash_table_a46d3f8ad70fd80dc7aa64f50676ef7a5}{}\label{class_hash_table_a46d3f8ad70fd80dc7aa64f50676ef7a5}
+
+
+\char`\"{}\+Searches the hash table for the data item with the key delete\+Key. If the data item is found, the removes the data item and returns true. Otherwise, returns false.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+removes the delete\+Key from the binary search tree 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Key\+Type} & variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true or false, if the item was found 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!retrieve@{retrieve}}
+\index{retrieve@{retrieve}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{retrieve(const Key\+Type \&search\+Key, Data\+Type \&return\+Item) const }{retrieve(const KeyType &searchKey, DataType &returnItem) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ bool {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::retrieve (
+\begin{DoxyParamCaption}
+\item[{const Key\+Type \&}]{search\+Key, }
+\item[{Data\+Type \&}]{return\+Item}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_hash_table_ad4ee3ff641daa330260a48de29492e66}{}\label{class_hash_table_ad4ee3ff641daa330260a48de29492e66}
+
+
+\char`\"{}\+Searches the hash table for the data item with key search\+Key. If the data item is found. then copies the data item to return\+Item and returns true. Otherwise, returns false with return\+Item undefined.\char`\"{} 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns true or false, depending on search\+Key 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em Key\+Type} & and Data\+Type variables \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true if search\+Key is found, else false 
+\end{DoxyReturn}
+\index{Hash\+Table@{Hash\+Table}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{show\+Structure() const }{showStructure() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ void {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::show\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_hash_table_a8b875e57f71a5bbba394e42361fb9fb4}{}\label{class_hash_table_a8b875e57f71a5bbba394e42361fb9fb4}
+\index{Hash\+Table@{Hash\+Table}!standard\+Deviation@{standard\+Deviation}}
+\index{standard\+Deviation@{standard\+Deviation}!Hash\+Table@{Hash\+Table}}
+\subsubsection[{\texorpdfstring{standard\+Deviation() const }{standardDeviation() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Data\+Type , typename Key\+Type $>$ double {\bf Hash\+Table}$<$ Data\+Type, Key\+Type $>$\+::standard\+Deviation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_hash_table_a4db2d920fd7c632f5b4b1bacd503bbf1}{}\label{class_hash_table_a4db2d920fd7c632f5b4b1bacd503bbf1}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_hash_table_8h}{Hash\+Table.\+h}\item 
+\hyperlink{_hash_table_8cpp}{Hash\+Table.\+cpp}\end{DoxyCompactItemize}

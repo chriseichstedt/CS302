@@ -1,0 +1,54 @@
+\begin{theindex}
+
+  \item {$\sim$\+Expr\+Tree}
+    \subitem {Expr\+Tree}, \hyperpage{6}
+
+  \indexspace
+
+  \item {build}
+    \subitem {Expr\+Tree}, \hyperpage{7}
+
+  \indexspace
+
+  \item {clear}
+    \subitem {Expr\+Tree}, \hyperpage{7}
+  \item {commute}
+    \subitem {Expr\+Tree}, \hyperpage{7}
+
+  \indexspace
+
+  \item {evaluate}
+    \subitem {Expr\+Tree}, \hyperpage{8}
+  \item {Expr\+Tree}
+    \subitem {$\sim$\+Expr\+Tree}, \hyperpage{6}
+    \subitem {build}, \hyperpage{7}
+    \subitem {clear}, \hyperpage{7}
+    \subitem {commute}, \hyperpage{7}
+    \subitem {evaluate}, \hyperpage{8}
+    \subitem {Expr\+Tree}, \hyperpage{5, 6}
+    \subitem {expression}, \hyperpage{8}
+    \subitem {is\+Equivalent}, \hyperpage{9}
+    \subitem {operator=}, \hyperpage{9}
+    \subitem {show\+Structure}, \hyperpage{9}
+  \item {Expr\+Tree$<$ Data\+Type $>$}, \hyperpage{5}
+  \item {expression}
+    \subitem {Expr\+Tree}, \hyperpage{8}
+  \item {Expression\+Tree.\+cpp}, \hyperpage{11}
+  \item {Expression\+Tree.\+h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {is\+Equivalent}
+    \subitem {Expr\+Tree}, \hyperpage{9}
+
+  \indexspace
+
+  \item {operator=}
+    \subitem {Expr\+Tree}, \hyperpage{9}
+
+  \indexspace
+
+  \item {show\+Structure}
+    \subitem {Expr\+Tree}, \hyperpage{9}
+
+\end{theindex}

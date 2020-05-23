@@ -1,0 +1,129 @@
+\hypertarget{class_timer}{}\section{Timer Class Reference}
+\label{class_timer}\index{Timer@{Timer}}
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{Timer} ()
+\begin{DoxyCompactList}\small\item\em this functions sets the timer flag to false at initialization \end{DoxyCompactList}\item 
+void \hyperlink{class_timer_a3a8b5272198d029779dc9302a54305a8}{start} ()  throw (runtime\+\_\+error)
+\begin{DoxyCompactList}\small\item\em this function checks to see if the timer flag is true, else it sets it to true and then records the begin time \end{DoxyCompactList}\item 
+void \hyperlink{class_timer_a63f0eb44b27402196590a03781515dba}{stop} ()  throw (logic\+\_\+error)
+\begin{DoxyCompactList}\small\item\em this function checks to see if the timer flag is false, else it sets it to false and then records the duration \end{DoxyCompactList}\item 
+double \hyperlink{class_timer_ad306e18f8d8a0296e001683f92d7f86e}{get\+Elapsed\+Time} () const   throw (logic\+\_\+error)
+\begin{DoxyCompactList}\small\item\em this function checks to see if the timer flag is true, else it finds the difference of start and finish time, then puts them into a variable called total, and then returns it; the logic is borrowed from the example \char`\"{}toddiff\char`\"{} function, that was given to us for this assignment \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Timer@{Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!Timer@{Timer}}
+\subsubsection[{\texorpdfstring{Timer()}{Timer()}}]{\setlength{\rightskip}{0pt plus 5cm}Timer\+::\+Timer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_timer_a5f16e8da27d2a5a5242dead46de05d97}{}\label{class_timer_a5f16e8da27d2a5a5242dead46de05d97}
+
+
+this functions sets the timer flag to false at initialization 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets the timer flag to false 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Timer@{Timer}!get\+Elapsed\+Time@{get\+Elapsed\+Time}}
+\index{get\+Elapsed\+Time@{get\+Elapsed\+Time}!Timer@{Timer}}
+\subsubsection[{\texorpdfstring{get\+Elapsed\+Time() const }{getElapsedTime() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Timer\+::get\+Elapsed\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const throw  logic\+\_\+error) }\hypertarget{class_timer_ad306e18f8d8a0296e001683f92d7f86e}{}\label{class_timer_ad306e18f8d8a0296e001683f92d7f86e}
+
+
+this function checks to see if the timer flag is true, else it finds the difference of start and finish time, then puts them into a variable called total, and then returns it; the logic is borrowed from the example \char`\"{}toddiff\char`\"{} function, that was given to us for this assignment 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns the difference between the start and finish time that has been put into a double variable called, total 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+returns the double variable, total 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\index{Timer@{Timer}!start@{start}}
+\index{start@{start}!Timer@{Timer}}
+\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  runtime\+\_\+error) }\hypertarget{class_timer_a3a8b5272198d029779dc9302a54305a8}{}\label{class_timer_a3a8b5272198d029779dc9302a54305a8}
+
+
+this function checks to see if the timer flag is true, else it sets it to true and then records the begin time 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+changes the timer flag to true and records the begin time 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\index{Timer@{Timer}!stop@{stop}}
+\index{stop@{stop}!Timer@{Timer}}
+\subsubsection[{\texorpdfstring{stop()}{stop()}}]{\setlength{\rightskip}{0pt plus 5cm}void Timer\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throw  logic\+\_\+error) }\hypertarget{class_timer_a63f0eb44b27402196590a03781515dba}{}\label{class_timer_a63f0eb44b27402196590a03781515dba}
+
+
+this function checks to see if the timer flag is false, else it sets it to false and then records the duration 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+changes the timer flag to false and records the duration 
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_timer_8h}{Timer.\+h}\item 
+\hyperlink{_timer_8cpp}{Timer.\+cpp}\end{DoxyCompactItemize}

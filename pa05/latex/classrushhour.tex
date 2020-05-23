@@ -1,0 +1,237 @@
+\hypertarget{classrushhour}{}\section{rushhour Class Reference}
+\label{classrushhour}\index{rushhour@{rushhour}}
+
+
+{\ttfamily \#include $<$rushhour.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrushhour_a07a4c6b194b30b6a3cbeb3957368b636}{rushhour} ()
+\begin{DoxyCompactList}\small\item\em default constructor for rushhour data type \end{DoxyCompactList}\item 
+int \hyperlink{classrushhour_ac9893ad0bd921df53cb3a1b8c298bbd9}{build\+Board} ()
+\begin{DoxyCompactList}\small\item\em a setup function for a user defined rush hour board \end{DoxyCompactList}\item 
+bool \hyperlink{classrushhour_aed525bf0c72f85adeb34c595af34dd78}{did\+We\+Win} ()
+\begin{DoxyCompactList}\small\item\em a boolean function that checks to see if vehicle zero meets win conditions \end{DoxyCompactList}\item 
+bool \hyperlink{classrushhour_a5377e3e2bf170e49c19021df612565cb}{move\+Forward} (int)
+\begin{DoxyCompactList}\small\item\em a boolean function that returns true if the vehicle can move forward, or false if it cannot \end{DoxyCompactList}\item 
+bool \hyperlink{classrushhour_a94bc7f8dcf697d41a28826a571ea2f04}{move\+Backward} (int)
+\begin{DoxyCompactList}\small\item\em a boolean function that returns true if the vehicle can move backward, or false if it cannot \end{DoxyCompactList}\item 
+void \hyperlink{classrushhour_a412bc8a6c254d987f0a86c1d7f824903}{solve\+It} (int)
+\begin{DoxyCompactList}\small\item\em a void function that uses recursion to solve the amount of moves necessary to solve the board \end{DoxyCompactList}\item 
+void \hyperlink{classrushhour_a2b5fc1053fffcedb91d21c782808a593}{print\+Results} (int)
+\begin{DoxyCompactList}\small\item\em a void function that prints out the solution if is\+Solved is true, and an error if it is false \end{DoxyCompactList}\item 
+void \hyperlink{classrushhour_ab2e101bd64c00e546eb597195ce04a98}{print\+Board} ()
+\begin{DoxyCompactList}\small\item\em a void function that prints the board; used only for testing \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rushhour@{rushhour}!rushhour@{rushhour}}
+\index{rushhour@{rushhour}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{rushhour()}{rushhour()}}]{\setlength{\rightskip}{0pt plus 5cm}rushhour\+::rushhour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_a07a4c6b194b30b6a3cbeb3957368b636}{}\label{classrushhour_a07a4c6b194b30b6a3cbeb3957368b636}
+
+
+default constructor for rushhour data type 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+creates an empty rushhour 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{rushhour@{rushhour}!build\+Board@{build\+Board}}
+\index{build\+Board@{build\+Board}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{build\+Board()}{buildBoard()}}]{\setlength{\rightskip}{0pt plus 5cm}int rushhour\+::build\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_ac9893ad0bd921df53cb3a1b8c298bbd9}{}\label{classrushhour_ac9893ad0bd921df53cb3a1b8c298bbd9}
+
+
+a setup function for a user defined rush hour board 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+initializes rushhour data type with user defined board 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{rushhour@{rushhour}!did\+We\+Win@{did\+We\+Win}}
+\index{did\+We\+Win@{did\+We\+Win}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{did\+We\+Win()}{didWeWin()}}]{\setlength{\rightskip}{0pt plus 5cm}bool rushhour\+::did\+We\+Win (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_aed525bf0c72f85adeb34c595af34dd78}{}\label{classrushhour_aed525bf0c72f85adeb34c595af34dd78}
+
+
+a boolean function that checks to see if vehicle zero meets win conditions 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+returns true or false depending on condition 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\index{rushhour@{rushhour}!move\+Backward@{move\+Backward}}
+\index{move\+Backward@{move\+Backward}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{move\+Backward(int)}{moveBackward(int)}}]{\setlength{\rightskip}{0pt plus 5cm}bool rushhour\+::move\+Backward (
+\begin{DoxyParamCaption}
+\item[{int}]{car\+Number}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_a94bc7f8dcf697d41a28826a571ea2f04}{}\label{classrushhour_a94bc7f8dcf697d41a28826a571ea2f04}
+
+
+a boolean function that returns true if the vehicle can move backward, or false if it cannot 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+moves passed in vehicle number, one space backward, either vertical or horizontal 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & car\+Number, used to specify which vehicle to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\index{rushhour@{rushhour}!move\+Forward@{move\+Forward}}
+\index{move\+Forward@{move\+Forward}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{move\+Forward(int)}{moveForward(int)}}]{\setlength{\rightskip}{0pt plus 5cm}bool rushhour\+::move\+Forward (
+\begin{DoxyParamCaption}
+\item[{int}]{car\+Number}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_a5377e3e2bf170e49c19021df612565cb}{}\label{classrushhour_a5377e3e2bf170e49c19021df612565cb}
+
+
+a boolean function that returns true if the vehicle can move forward, or false if it cannot 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+moves passed in vehicle number, one space forward, either vertical or horizontal 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & car\+Number, used to specify which vehicle to move \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\index{rushhour@{rushhour}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{print\+Board()}{printBoard()}}]{\setlength{\rightskip}{0pt plus 5cm}void rushhour\+::print\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_ab2e101bd64c00e546eb597195ce04a98}{}\label{classrushhour_ab2e101bd64c00e546eb597195ce04a98}
+
+
+a void function that prints the board; used only for testing 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{rushhour@{rushhour}!print\+Results@{print\+Results}}
+\index{print\+Results@{print\+Results}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{print\+Results(int)}{printResults(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void rushhour\+::print\+Results (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_a2b5fc1053fffcedb91d21c782808a593}{}\label{classrushhour_a2b5fc1053fffcedb91d21c782808a593}
+
+
+a void function that prints out the solution if is\+Solved is true, and an error if it is false 
+
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num\+Val, used to print out the amount of moves necessary to complete the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\index{rushhour@{rushhour}!solve\+It@{solve\+It}}
+\index{solve\+It@{solve\+It}!rushhour@{rushhour}}
+\subsubsection[{\texorpdfstring{solve\+It(int)}{solveIt(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void rushhour\+::solve\+It (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{classrushhour_a412bc8a6c254d987f0a86c1d7f824903}{}\label{classrushhour_a412bc8a6c254d987f0a86c1d7f824903}
+
+
+a void function that uses recursion to solve the amount of moves necessary to solve the board 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{classrushhour_aed525bf0c72f85adeb34c595af34dd78}{did\+We\+Win()}, \hyperlink{classrushhour_a5377e3e2bf170e49c19021df612565cb}{move\+Forward()}, \hyperlink{classrushhour_a94bc7f8dcf697d41a28826a571ea2f04}{move\+Backward()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+updates the amount of moves necessary to solve the board, as well as the cap after a solution is found 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num\+Val, used to specify the amount of moves to solve the board \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rushhour_8h}{rushhour.\+h}\item 
+\hyperlink{rushhour_8cpp}{rushhour.\+cpp}\end{DoxyCompactItemize}

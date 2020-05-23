@@ -1,0 +1,183 @@
+\hypertarget{classrush_board}{}\section{rush\+Board Class Reference}
+\label{classrush_board}\index{rush\+Board@{rush\+Board}}
+
+
+{\ttfamily \#include $<$Rush\+Hour.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrush_board_a841da3003dbdbcd3a1819dd8bd1ae44a}{rush\+Board} ()
+\begin{DoxyCompactList}\small\item\em default constructor for \hyperlink{classrush_board}{rush\+Board} \end{DoxyCompactList}\item 
+int \hyperlink{classrush_board_a2e405bdfe956303bdfe542eead0e8f22}{setup\+Board} ()
+\begin{DoxyCompactList}\small\item\em function that sets up the default game board \end{DoxyCompactList}\item 
+void \hyperlink{classrush_board_ab89fd12a783d3655734b3544d46330ec}{print\+Results} (int scenario\+Num) const 
+\begin{DoxyCompactList}\small\item\em Get Key Function. \end{DoxyCompactList}\item 
+void \hyperlink{classrush_board_a83c9613d9e7d19f8032bb4c220f64081}{print\+Board} () const 
+\begin{DoxyCompactList}\small\item\em Get Key Function. \end{DoxyCompactList}\item 
+bool \hyperlink{classrush_board_acfe7888983f7f70c83fbd5b3c4ca8389}{is\+Won} () const 
+\begin{DoxyCompactList}\small\item\em Get Key Function. \end{DoxyCompactList}\item 
+void \hyperlink{classrush_board_ac9f90fd58cb5d9b91b304035d93056d3}{solve} ()
+\begin{DoxyCompactList}\small\item\em Get Key Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rush\+Board@{rush\+Board}!rush\+Board@{rush\+Board}}
+\index{rush\+Board@{rush\+Board}!rush\+Board@{rush\+Board}}
+\subsubsection[{\texorpdfstring{rush\+Board()}{rushBoard()}}]{\setlength{\rightskip}{0pt plus 5cm}rush\+Board\+::rush\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrush_board_a841da3003dbdbcd3a1819dd8bd1ae44a}{}\label{classrush_board_a841da3003dbdbcd3a1819dd8bd1ae44a}
+
+
+default constructor for \hyperlink{classrush_board}{rush\+Board} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets bool won to false 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\index{rush\+Board@{rush\+Board}!is\+Won@{is\+Won}}
+\index{is\+Won@{is\+Won}!rush\+Board@{rush\+Board}}
+\subsubsection[{\texorpdfstring{is\+Won() const }{isWon() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool rush\+Board\+::is\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classrush_board_acfe7888983f7f70c83fbd5b3c4ca8389}{}\label{classrush_board_acfe7888983f7f70c83fbd5b3c4ca8389}
+
+
+Get Key Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if board has been solved
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+\index{rush\+Board@{rush\+Board}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!rush\+Board@{rush\+Board}}
+\subsubsection[{\texorpdfstring{print\+Board() const }{printBoard() const }}]{\setlength{\rightskip}{0pt plus 5cm}void rush\+Board\+::print\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classrush_board_a83c9613d9e7d19f8032bb4c220f64081}{}\label{classrush_board_a83c9613d9e7d19f8032bb4c220f64081}
+
+
+Get Key Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+output to terminal the contents of the board 
+\end{DoxyPostcond}
+\index{rush\+Board@{rush\+Board}!print\+Results@{print\+Results}}
+\index{print\+Results@{print\+Results}!rush\+Board@{rush\+Board}}
+\subsubsection[{\texorpdfstring{print\+Results(int scenario\+Num) const }{printResults(int scenarioNum) const }}]{\setlength{\rightskip}{0pt plus 5cm}void rush\+Board\+::print\+Results (
+\begin{DoxyParamCaption}
+\item[{int}]{scenario\+Num}
+\end{DoxyParamCaption}
+) const}\hypertarget{classrush_board_ab89fd12a783d3655734b3544d46330ec}{}\label{classrush_board_ab89fd12a783d3655734b3544d46330ec}
+
+
+Get Key Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & for the scenerio number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints out results of board, if the board has been solved 
+\end{DoxyPostcond}
+\index{rush\+Board@{rush\+Board}!setup\+Board@{setup\+Board}}
+\index{setup\+Board@{setup\+Board}!rush\+Board@{rush\+Board}}
+\subsubsection[{\texorpdfstring{setup\+Board()}{setupBoard()}}]{\setlength{\rightskip}{0pt plus 5cm}int rush\+Board\+::setup\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrush_board_a2e405bdfe956303bdfe542eead0e8f22}{}\label{classrush_board_a2e405bdfe956303bdfe542eead0e8f22}
+
+
+function that sets up the default game board 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+game\+Board.\+set\+Up\+Board()
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{classrush_board_a2e405bdfe956303bdfe542eead0e8f22}{setup\+Board()} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+sets bool won to false 
+\end{DoxyPostcond}
+\index{rush\+Board@{rush\+Board}!solve@{solve}}
+\index{solve@{solve}!rush\+Board@{rush\+Board}}
+\subsubsection[{\texorpdfstring{solve()}{solve()}}]{\setlength{\rightskip}{0pt plus 5cm}void rush\+Board\+::solve (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrush_board_ac9f90fd58cb5d9b91b304035d93056d3}{}\label{classrush_board_ac9f90fd58cb5d9b91b304035d93056d3}
+
+
+Get Key Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+board must be set prior to being solved 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+solves for the number of moves required to solve a preset board 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_rush_hour_8h}{Rush\+Hour.\+h}\item 
+\hyperlink{_rush_hour_8cpp}{Rush\+Hour.\+cpp}\end{DoxyCompactItemize}

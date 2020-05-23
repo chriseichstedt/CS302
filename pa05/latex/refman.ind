@@ -1,0 +1,69 @@
+\begin{theindex}
+
+  \item {build\+Board}
+    \subitem {rushhour}, \hyperpage{6}
+
+  \indexspace
+
+  \item {column}
+    \subitem {vehicles}, \hyperpage{9}
+
+  \indexspace
+
+  \item {did\+We\+Win}
+    \subitem {rushhour}, \hyperpage{6}
+
+  \indexspace
+
+  \item {main}
+    \subitem {rushhour.\+cpp}, \hyperpage{11}
+  \item {move\+Backward}
+    \subitem {rushhour}, \hyperpage{7}
+  \item {move\+Forward}
+    \subitem {rushhour}, \hyperpage{7}
+
+  \indexspace
+
+  \item {orientation}
+    \subitem {vehicles}, \hyperpage{9}
+
+  \indexspace
+
+  \item {print\+Board}
+    \subitem {rushhour}, \hyperpage{7}
+  \item {print\+Results}
+    \subitem {rushhour}, \hyperpage{8}
+
+  \indexspace
+
+  \item {row}
+    \subitem {vehicles}, \hyperpage{9}
+  \item {rushhour}, \hyperpage{5}
+    \subitem {build\+Board}, \hyperpage{6}
+    \subitem {did\+We\+Win}, \hyperpage{6}
+    \subitem {move\+Backward}, \hyperpage{7}
+    \subitem {move\+Forward}, \hyperpage{7}
+    \subitem {print\+Board}, \hyperpage{7}
+    \subitem {print\+Results}, \hyperpage{8}
+    \subitem {rushhour}, \hyperpage{5}
+    \subitem {solve\+It}, \hyperpage{8}
+  \item {rushhour.\+cpp}, \hyperpage{11}
+    \subitem {main}, \hyperpage{11}
+  \item {rushhour.\+h}, \hyperpage{12}
+
+  \indexspace
+
+  \item {size}
+    \subitem {vehicles}, \hyperpage{9}
+  \item {solve\+It}
+    \subitem {rushhour}, \hyperpage{8}
+
+  \indexspace
+
+  \item {vehicles}, \hyperpage{9}
+    \subitem {column}, \hyperpage{9}
+    \subitem {orientation}, \hyperpage{9}
+    \subitem {row}, \hyperpage{9}
+    \subitem {size}, \hyperpage{9}
+
+\end{theindex}

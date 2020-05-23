@@ -1,0 +1,161 @@
+\begin{theindex}
+
+  \item {$\sim$\+B\+S\+Tree}
+    \subitem {B\+S\+Tree}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Account\+Record}, \hyperpage{5}
+    \subitem {acct\+ID}, \hyperpage{5}
+    \subitem {balance}, \hyperpage{5}
+    \subitem {first\+Name}, \hyperpage{5}
+    \subitem {last\+Name}, \hyperpage{5}
+  \item {acct\+ID}
+    \subitem {Account\+Record}, \hyperpage{5}
+    \subitem {Index\+Entry}, \hyperpage{17}
+
+  \indexspace
+
+  \item {B\+S\+Tree}
+    \subitem {$\sim$\+B\+S\+Tree}, \hyperpage{7}
+    \subitem {B\+S\+Tree}, \hyperpage{7}
+    \subitem {clear}, \hyperpage{8}
+    \subitem {clear\+\_\+\+Helper}, \hyperpage{8}
+    \subitem {copy\+Constructor\+\_\+\+Helper}, \hyperpage{9}
+    \subitem {get\+Count}, \hyperpage{9}
+    \subitem {get\+Count\+\_\+\+Helper}, \hyperpage{10}
+    \subitem {get\+Height}, \hyperpage{10}
+    \subitem {get\+Height\+\_\+\+Helper}, \hyperpage{11}
+    \subitem {insert}, \hyperpage{11}
+    \subitem {insert\+\_\+\+Helper}, \hyperpage{11}
+    \subitem {is\+Empty}, \hyperpage{12}
+    \subitem {operator=}, \hyperpage{12}
+    \subitem {remove}, \hyperpage{13}
+    \subitem {remove\+\_\+\+Helper}, \hyperpage{13}
+    \subitem {retrieve}, \hyperpage{14}
+    \subitem {retrieve\+\_\+\+Helper}, \hyperpage{14}
+    \subitem {root}, \hyperpage{16}
+    \subitem {show\+Helper}, \hyperpage{15}
+    \subitem {show\+Structure}, \hyperpage{15}
+    \subitem {write\+Keys}, \hyperpage{15}
+    \subitem {write\+Keys\+\_\+\+Helper}, \hyperpage{15}
+  \item {B\+S\+Tree$<$ Data\+Type, Key\+Type $>$}, \hyperpage{5}
+  \item {B\+S\+Tree$<$ Data\+Type, Key\+Type $>$\+::\+B\+S\+Tree\+Node}, 
+		\hyperpage{16}
+  \item {B\+S\+Tree.\+cpp}, \hyperpage{19}
+  \item {B\+S\+Tree.\+h}, \hyperpage{19}
+  \item {B\+S\+Tree\+::\+B\+S\+Tree\+Node}
+    \subitem {B\+S\+Tree\+Node}, \hyperpage{16}
+    \subitem {data\+Item}, \hyperpage{17}
+    \subitem {left}, \hyperpage{17}
+    \subitem {right}, \hyperpage{17}
+  \item {B\+S\+Tree\+Node}
+    \subitem {B\+S\+Tree\+::\+B\+S\+Tree\+Node}, \hyperpage{16}
+  \item {balance}
+    \subitem {Account\+Record}, \hyperpage{5}
+  \item {bytes\+Per\+Record}
+    \subitem {database.\+cpp}, \hyperpage{20}
+
+  \indexspace
+
+  \item {clear}
+    \subitem {B\+S\+Tree}, \hyperpage{8}
+  \item {clear\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{8}
+  \item {copy\+Constructor\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{9}
+
+  \indexspace
+
+  \item {data\+Item}
+    \subitem {B\+S\+Tree\+::\+B\+S\+Tree\+Node}, \hyperpage{17}
+  \item {database.\+cpp}, \hyperpage{19}
+    \subitem {bytes\+Per\+Record}, \hyperpage{20}
+    \subitem {main}, \hyperpage{20}
+    \subitem {name\+Length}, \hyperpage{20}
+
+  \indexspace
+
+  \item {first\+Name}
+    \subitem {Account\+Record}, \hyperpage{5}
+
+  \indexspace
+
+  \item {get\+Count}
+    \subitem {B\+S\+Tree}, \hyperpage{9}
+  \item {get\+Count\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{10}
+  \item {get\+Height}
+    \subitem {B\+S\+Tree}, \hyperpage{10}
+  \item {get\+Height\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{11}
+  \item {get\+Key}
+    \subitem {Index\+Entry}, \hyperpage{17}
+
+  \indexspace
+
+  \item {Index\+Entry}, \hyperpage{17}
+    \subitem {acct\+ID}, \hyperpage{17}
+    \subitem {get\+Key}, \hyperpage{17}
+    \subitem {rec\+Num}, \hyperpage{17}
+  \item {insert}
+    \subitem {B\+S\+Tree}, \hyperpage{11}
+  \item {insert\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{11}
+  \item {is\+Empty}
+    \subitem {B\+S\+Tree}, \hyperpage{12}
+
+  \indexspace
+
+  \item {last\+Name}
+    \subitem {Account\+Record}, \hyperpage{5}
+  \item {left}
+    \subitem {B\+S\+Tree\+::\+B\+S\+Tree\+Node}, \hyperpage{17}
+
+  \indexspace
+
+  \item {main}
+    \subitem {database.\+cpp}, \hyperpage{20}
+
+  \indexspace
+
+  \item {name\+Length}
+    \subitem {database.\+cpp}, \hyperpage{20}
+
+  \indexspace
+
+  \item {operator=}
+    \subitem {B\+S\+Tree}, \hyperpage{12}
+
+  \indexspace
+
+  \item {rec\+Num}
+    \subitem {Index\+Entry}, \hyperpage{17}
+  \item {remove}
+    \subitem {B\+S\+Tree}, \hyperpage{13}
+  \item {remove\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{13}
+  \item {retrieve}
+    \subitem {B\+S\+Tree}, \hyperpage{14}
+  \item {retrieve\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{14}
+  \item {right}
+    \subitem {B\+S\+Tree\+::\+B\+S\+Tree\+Node}, \hyperpage{17}
+  \item {root}
+    \subitem {B\+S\+Tree}, \hyperpage{16}
+
+  \indexspace
+
+  \item {show\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{15}
+  \item {show\+Structure}
+    \subitem {B\+S\+Tree}, \hyperpage{15}
+
+  \indexspace
+
+  \item {write\+Keys}
+    \subitem {B\+S\+Tree}, \hyperpage{15}
+  \item {write\+Keys\+\_\+\+Helper}
+    \subitem {B\+S\+Tree}, \hyperpage{15}
+
+\end{theindex}

@@ -1,0 +1,131 @@
+\begin{theindex}
+
+  \item {$\sim$\+Weighted\+Graph}
+    \subitem {Weighted\+Graph}, \hyperpage{7}
+
+  \indexspace
+
+  \item {are\+All\+Even}
+    \subitem {Weighted\+Graph}, \hyperpage{7}
+
+  \indexspace
+
+  \item {clear}
+    \subitem {Weighted\+Graph}, \hyperpage{7}
+  \item {config.\+h}, \hyperpage{13}
+    \subitem {L\+A\+B12\+\_\+\+T\+E\+S\+T1}, \hyperpage{13}
+    \subitem {L\+A\+B12\+\_\+\+T\+E\+S\+T2}, \hyperpage{13}
+    \subitem {L\+A\+B12\+\_\+\+T\+E\+S\+T3}, \hyperpage{13}
+
+  \indexspace
+
+  \item {get\+Color}
+    \subitem {Weighted\+Graph\+::\+Vertex}, \hyperpage{5}
+  \item {get\+Edge\+Weight}
+    \subitem {Weighted\+Graph}, \hyperpage{8}
+  \item {get\+Label}
+    \subitem {Weighted\+Graph\+::\+Vertex}, \hyperpage{5}
+
+  \indexspace
+
+  \item {has\+Proper\+Coloring}
+    \subitem {Weighted\+Graph}, \hyperpage{8}
+
+  \indexspace
+
+  \item {I\+N\+F\+I\+N\+I\+T\+E\+\_\+\+E\+D\+G\+E\+\_\+\+WT}
+    \subitem {Weighted\+Graph}, \hyperpage{11}
+  \item {insert\+Edge}
+    \subitem {Weighted\+Graph}, \hyperpage{8}
+  \item {insert\+Vertex}
+    \subitem {Weighted\+Graph}, \hyperpage{9}
+  \item {is\+Empty}
+    \subitem {Weighted\+Graph}, \hyperpage{9}
+  \item {is\+Full}
+    \subitem {Weighted\+Graph}, \hyperpage{9}
+
+  \indexspace
+
+  \item {L\+A\+B12\+\_\+\+T\+E\+S\+T1}
+    \subitem {config.\+h}, \hyperpage{13}
+  \item {L\+A\+B12\+\_\+\+T\+E\+S\+T2}
+    \subitem {config.\+h}, \hyperpage{13}
+  \item {L\+A\+B12\+\_\+\+T\+E\+S\+T3}
+    \subitem {config.\+h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {M\+A\+X\+\_\+\+G\+R\+A\+P\+H\+\_\+\+S\+I\+ZE}
+    \subitem {Weighted\+Graph}, \hyperpage{11}
+  \item {main}
+    \subitem {test12.\+cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {operator=}
+    \subitem {Weighted\+Graph}, \hyperpage{9}
+
+  \indexspace
+
+  \item {print\+\_\+help}
+    \subitem {test12.\+cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {remove\+Edge}
+    \subitem {Weighted\+Graph}, \hyperpage{10}
+  \item {remove\+Vertex}
+    \subitem {Weighted\+Graph}, \hyperpage{10}
+  \item {retrieve\+Vertex}
+    \subitem {Weighted\+Graph}, \hyperpage{10}
+
+  \indexspace
+
+  \item {set\+Color}
+    \subitem {Weighted\+Graph\+::\+Vertex}, \hyperpage{5}
+  \item {set\+Label}
+    \subitem {Weighted\+Graph\+::\+Vertex}, \hyperpage{5}
+  \item {show12.\+cpp}, \hyperpage{13}
+  \item {show\+Shortest\+Paths}
+    \subitem {Weighted\+Graph}, \hyperpage{10}
+  \item {show\+Structure}
+    \subitem {Weighted\+Graph}, \hyperpage{11}
+
+  \indexspace
+
+  \item {test12.\+cpp}, \hyperpage{13}
+    \subitem {main}, \hyperpage{14}
+    \subitem {print\+\_\+help}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Weighted\+Graph}, \hyperpage{5}
+    \subitem {$\sim$\+Weighted\+Graph}, \hyperpage{7}
+    \subitem {are\+All\+Even}, \hyperpage{7}
+    \subitem {clear}, \hyperpage{7}
+    \subitem {get\+Edge\+Weight}, \hyperpage{8}
+    \subitem {has\+Proper\+Coloring}, \hyperpage{8}
+    \subitem {I\+N\+F\+I\+N\+I\+T\+E\+\_\+\+E\+D\+G\+E\+\_\+\+WT}, 
+		\hyperpage{11}
+    \subitem {insert\+Edge}, \hyperpage{8}
+    \subitem {insert\+Vertex}, \hyperpage{9}
+    \subitem {is\+Empty}, \hyperpage{9}
+    \subitem {is\+Full}, \hyperpage{9}
+    \subitem {M\+A\+X\+\_\+\+G\+R\+A\+P\+H\+\_\+\+S\+I\+ZE}, 
+		\hyperpage{11}
+    \subitem {operator=}, \hyperpage{9}
+    \subitem {remove\+Edge}, \hyperpage{10}
+    \subitem {remove\+Vertex}, \hyperpage{10}
+    \subitem {retrieve\+Vertex}, \hyperpage{10}
+    \subitem {show\+Shortest\+Paths}, \hyperpage{10}
+    \subitem {show\+Structure}, \hyperpage{11}
+    \subitem {Weighted\+Graph}, \hyperpage{6, 7}
+  \item {Weighted\+Graph.\+cpp}, \hyperpage{14}
+  \item {Weighted\+Graph.\+h}, \hyperpage{14}
+  \item {Weighted\+Graph\+::\+Vertex}, \hyperpage{5}
+    \subitem {get\+Color}, \hyperpage{5}
+    \subitem {get\+Label}, \hyperpage{5}
+    \subitem {set\+Color}, \hyperpage{5}
+    \subitem {set\+Label}, \hyperpage{5}
+
+\end{theindex}

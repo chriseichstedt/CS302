@@ -1,0 +1,318 @@
+\hypertarget{class_board}{}\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+{\ttfamily \#include $<$Rush\+Hour.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board} ()
+\begin{DoxyCompactList}\small\item\em This function will initialize a board class variable by setting all the grid values to zero, this is the default constructor of the class. \end{DoxyCompactList}\item 
+\hyperlink{class_board}{Board} \& \hyperlink{class_board_ae6c8d66af1bb70e1d34a704321675975}{operator=} (const \hyperlink{class_board}{Board} \&other)
+\begin{DoxyCompactList}\small\item\em default assignment operator that copies one board into another \end{DoxyCompactList}\item 
+int \hyperlink{class_board_a1b06ea6dfdcb9d958abca88274b24199}{setup\+Board} ()
+\begin{DoxyCompactList}\small\item\em This function will set up the board values from keyboard inputs it also makes sure to clear the variables of the board class to start with a clean board before it sets any values. Furthermore it will return a int value if it is zero then there is no more inputs to be taken in other wise it is some other number of cars. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_a58b38efec8c8ce21b55546da09685a3e}{print\+Board} () const 
+\begin{DoxyCompactList}\small\item\em This Function prints the board\textquotesingle{}s two dimensianol array values this function is mainly for debugging purposes. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a13b97126e30f1919ff6422969dd718ca}{is\+Won} () const 
+\begin{DoxyCompactList}\small\item\em bool function that checks the current state of the board, whether it is won or not \end{DoxyCompactList}\item 
+int \hyperlink{class_board_ac6a88cf5d91ddcf9f60bcd2cbc13d1b5}{get\+Num\+Cars} () const 
+\begin{DoxyCompactList}\small\item\em function that returns the number of cars \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_aaccba9b598e3263ce0f847905c7932f7}{move\+Forward} (int car\+Num) const 
+\begin{DoxyCompactList}\small\item\em This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. \end{DoxyCompactList}\item 
+bool \hyperlink{class_board_a5e28f45b57feda8b5923abddfecb239f}{move\+Backward} (int car\+Num) const 
+\begin{DoxyCompactList}\small\item\em This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_acb31ee668b7da4f505e9eefa7106a247}{move\+VehicleF} (int car\+Num)
+\begin{DoxyCompactList}\small\item\em This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. \end{DoxyCompactList}\item 
+void \hyperlink{class_board_aafad681795230d9764ad1bf5e3b3548f}{move\+VehicleB} (int car\+Num)
+\begin{DoxyCompactList}\small\item\em This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. \end{DoxyCompactList}\item 
+string \hyperlink{class_board_a64f3541935062c9084dc010be11c5b77}{get\+Key} () const 
+\begin{DoxyCompactList}\small\item\em returns the key\+Val for the current board \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\subsubsection[{\texorpdfstring{Board()}{Board()}}]{\setlength{\rightskip}{0pt plus 5cm}Board\+::\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb}
+
+
+This function will initialize a board class variable by setting all the grid values to zero, this is the default constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+creates a board item 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\index{Board@{Board}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Board@{Board}}
+\subsubsection[{\texorpdfstring{get\+Key() const }{getKey() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Board\+::get\+Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_board_a64f3541935062c9084dc010be11c5b77}{}\label{class_board_a64f3541935062c9084dc010be11c5b77}
+
+
+returns the key\+Val for the current board 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string key\+Val
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+\index{Board@{Board}!get\+Num\+Cars@{get\+Num\+Cars}}
+\index{get\+Num\+Cars@{get\+Num\+Cars}!Board@{Board}}
+\subsubsection[{\texorpdfstring{get\+Num\+Cars() const }{getNumCars() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::get\+Num\+Cars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_board_ac6a88cf5d91ddcf9f60bcd2cbc13d1b5}{}\label{class_board_ac6a88cf5d91ddcf9f60bcd2cbc13d1b5}
+
+
+function that returns the number of cars 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int number\+Of\+Cars
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+\index{Board@{Board}!is\+Won@{is\+Won}}
+\index{is\+Won@{is\+Won}!Board@{Board}}
+\subsubsection[{\texorpdfstring{is\+Won() const }{isWon() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::is\+Won (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_board_a13b97126e30f1919ff6422969dd718ca}{}\label{class_board_a13b97126e30f1919ff6422969dd718ca}
+
+
+bool function that checks the current state of the board, whether it is won or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if win condition is met, bool false if not
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+none 
+\end{DoxyPostcond}
+\index{Board@{Board}!move\+Backward@{move\+Backward}}
+\index{move\+Backward@{move\+Backward}!Board@{Board}}
+\subsubsection[{\texorpdfstring{move\+Backward(int car\+Num) const }{moveBackward(int carNum) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::move\+Backward (
+\begin{DoxyParamCaption}
+\item[{int}]{car\+Num}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_board_a5e28f45b57feda8b5923abddfecb239f}{}\label{class_board_a5e28f45b57feda8b5923abddfecb239f}
+
+
+This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value that specifies which scenerio is being printed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints message to terminal 
+\end{DoxyPostcond}
+\index{Board@{Board}!move\+Forward@{move\+Forward}}
+\index{move\+Forward@{move\+Forward}!Board@{Board}}
+\subsubsection[{\texorpdfstring{move\+Forward(int car\+Num) const }{moveForward(int carNum) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Board\+::move\+Forward (
+\begin{DoxyParamCaption}
+\item[{int}]{car\+Num}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_board_aaccba9b598e3263ce0f847905c7932f7}{}\label{class_board_aaccba9b598e3263ce0f847905c7932f7}
+
+
+This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value that specifies which scenerio is being printed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints message to terminal 
+\end{DoxyPostcond}
+\index{Board@{Board}!move\+VehicleB@{move\+VehicleB}}
+\index{move\+VehicleB@{move\+VehicleB}!Board@{Board}}
+\subsubsection[{\texorpdfstring{move\+Vehicle\+B(int car\+Num)}{moveVehicleB(int carNum)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::move\+VehicleB (
+\begin{DoxyParamCaption}
+\item[{int}]{car\+Num}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_aafad681795230d9764ad1bf5e3b3548f}{}\label{class_board_aafad681795230d9764ad1bf5e3b3548f}
+
+
+This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value that specifies which scenerio is being printed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints message to terminal 
+\end{DoxyPostcond}
+\index{Board@{Board}!move\+VehicleF@{move\+VehicleF}}
+\index{move\+VehicleF@{move\+VehicleF}!Board@{Board}}
+\subsubsection[{\texorpdfstring{move\+Vehicle\+F(int car\+Num)}{moveVehicleF(int carNum)}}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::move\+VehicleF (
+\begin{DoxyParamCaption}
+\item[{int}]{car\+Num}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_acb31ee668b7da4f505e9eefa7106a247}{}\label{class_board_acb31ee668b7da4f505e9eefa7106a247}
+
+
+This function checks if the specified vehicle can be moved forward within the board\textquotesingle{}s two dimensional array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & value that specifies which scenerio is being printed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints message to terminal 
+\end{DoxyPostcond}
+\index{Board@{Board}!operator=@{operator=}}
+\index{operator=@{operator=}!Board@{Board}}
+\subsubsection[{\texorpdfstring{operator=(const Board \&other)}{operator=(const Board &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Board} \& Board\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Board} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_ae6c8d66af1bb70e1d34a704321675975}{}\label{class_board_ae6c8d66af1bb70e1d34a704321675975}
+
+
+default assignment operator that copies one board into another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \hyperlink{class_board}{Board}\& other \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+updates the current board with one assigned to it 
+\end{DoxyPostcond}
+\index{Board@{Board}!print\+Board@{print\+Board}}
+\index{print\+Board@{print\+Board}!Board@{Board}}
+\subsubsection[{\texorpdfstring{print\+Board() const }{printBoard() const }}]{\setlength{\rightskip}{0pt plus 5cm}void Board\+::print\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_board_a58b38efec8c8ce21b55546da09685a3e}{}\label{class_board_a58b38efec8c8ce21b55546da09685a3e}
+
+
+This Function prints the board\textquotesingle{}s two dimensianol array values this function is mainly for debugging purposes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+none 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+prints message two dimensional array 
+\end{DoxyPostcond}
+\index{Board@{Board}!setup\+Board@{setup\+Board}}
+\index{setup\+Board@{setup\+Board}!Board@{Board}}
+\subsubsection[{\texorpdfstring{setup\+Board()}{setupBoard()}}]{\setlength{\rightskip}{0pt plus 5cm}int Board\+::setup\+Board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_board_a1b06ea6dfdcb9d958abca88274b24199}{}\label{class_board_a1b06ea6dfdcb9d958abca88274b24199}
+
+
+This function will set up the board values from keyboard inputs it also makes sure to clear the variables of the board class to start with a clean board before it sets any values. Furthermore it will return a int value if it is zero then there is no more inputs to be taken in other wise it is some other number of cars. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em noe} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int value that functions as a bool to demonstrate that there is no more values to be read into the board
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+the input values to the board must be as specified and cars must not be out of bound or overlapping 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+allocates all inputed data in the proper place so that the board can be solved 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_rush_hour_8h}{Rush\+Hour.\+h}\item 
+\hyperlink{_rush_hour_8cpp}{Rush\+Hour.\+cpp}\end{DoxyCompactItemize}
